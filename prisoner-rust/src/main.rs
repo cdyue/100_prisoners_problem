@@ -1,14 +1,16 @@
 use std::time::SystemTime;
 
-const _NUM: usize = 10000;
+const _NUM: usize = 100000;
 
 fn main() {
     let start_time = SystemTime::now();
 
     let _limit = _NUM / 2;
 
-    let mut prisoners: [usize; _NUM] = [0; _NUM];
-    let mut boxes: [usize; _NUM] = [0; _NUM];
+    let mut prisoners = Box::new([0; _NUM]);
+    let mut boxes = Box::new([0; _NUM]);
+    // let mut prisoners = Box::new([0; _NUM]);
+    // let mut boxes = Box::new([0; _NUM]);
 
     let mut i = 1;
     while i <= _NUM {
@@ -22,14 +24,15 @@ fn main() {
     // println!("boxes: {:?}", boxes);
 
     let mut result: [bool; _NUM] = [false; _NUM];
-    for p in prisoners {
+    // for p in prisoners {
+    for p in prisoners.as_slice() {
         let mut found = false;
-        let mut target = p;
+        let mut target = *p;
 
         for _i in 1.._limit {
             // println!("select target:{}", target);
             let opened_box = boxes[target - 1];
-            if p == opened_box {
+            if *p == opened_box {
                 // println!("winner:{}", p);
                 found = true;
                 break;
