@@ -23,16 +23,17 @@ func main() {
 	randSlice(boxes)
 	// fmt.Println("boxes:", boxes)
 	// fmt.Println("prisoners:", prisoners)
-
+	var round float64 = 0
 	result := make([]bool, _num)
 	for _, v := range prisoners {
 		found := false
 		target := v
 		for i := _limit; i > 0; i-- {
 			openedBox := boxes[target-1]
+			round++
 			if openedBox == v {
 				found = true
-				continue
+				break
 			} else {
 				target = openedBox
 			}
@@ -42,7 +43,7 @@ func main() {
 	}
 	// fmt.Println("result:", result)
 	duration := time.Now().Sub(startTime).Microseconds()
-	fmt.Printf("total result: %s, duration: %d microseconds", checkResult(result), duration)
+	fmt.Printf("Total result: %s, Duration: %d microseconds, Total round: %f, Round/Microsecond: %f", checkResult(result), duration, round, round/float64(duration))
 
 }
 

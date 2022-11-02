@@ -24,6 +24,7 @@ fn main() {
     // println!("boxes: {:?}", boxes);
 
     let mut result: [bool; _NUM] = [false; _NUM];
+    let mut round: u128 = 0;
     // for p in prisoners {
     for p in prisoners.as_slice() {
         let mut found = false;
@@ -32,6 +33,7 @@ fn main() {
         for _i in 1.._limit {
             // println!("select target:{}", target);
             let opened_box = boxes[target - 1];
+            round = round + 1;
             if *p == opened_box {
                 // println!("winner:{}", p);
                 found = true;
@@ -43,11 +45,17 @@ fn main() {
         result[p - 1] = found
     }
 
-    let duration = SystemTime::now().duration_since(start_time);
+    let duration = SystemTime::now()
+        .duration_since(start_time)
+        .unwrap()
+        .as_micros();
+    let avg = round as f64 / duration as f64;
     println!(
-        "Result: {} , Duration: {} microseconds",
+        "Total Result: {} , Duration: {} microseconds, Total Round: {}, Round/Microsecond: {}",
         check_result(result),
-        duration.unwrap().as_micros()
+        duration,
+        round,
+        avg,
     );
 }
 
