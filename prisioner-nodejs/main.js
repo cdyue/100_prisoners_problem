@@ -13,7 +13,7 @@ function run() {
     prisoners[i] = i;
     boxes[i] = i;
   };
-  prisoners = randSlice(prisoners);
+
   boxes = randSlice(boxes);
   // console.log("prisoners:" + prisoners)
   // console.log("boxes:" + boxes)
