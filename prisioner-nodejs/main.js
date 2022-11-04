@@ -24,7 +24,7 @@ function run() {
   for (let i = 0; i < _num; i++) {
     let found = false;
     let target = prisoners[i]
-    for (let j = 0; j < _num; j++) {
+    for (let j = 0; j < _limit; j++) {
       let open_box = boxes[target - 1]
       round++;
       if (open_box == target) {
