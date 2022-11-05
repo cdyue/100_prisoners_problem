@@ -30,3 +30,6 @@
   * Total result: lose, Duration: 15408866.400024414 microseconds, Total round: 3654349722, Round/Microsecond: 237.15889456957132
   * Total result: lose, Duration: 21403184.299987793 microseconds, Total round: 4944853558, Round/Microsecond: 231.03354569547955
   * Total result: win, Duration: 15278263.800048828 microseconds, Total round: 3632576274, Round/Microsecond: 237.76106510141489
+
+* Python: 3.11.0
+  * Total result: win, Duration: 218016103 microseconds, Total round: 2565787086, Round/Microsecond: 11.768796206764598
