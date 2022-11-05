@@ -10,8 +10,8 @@ function run() {
   let boxes = [];
 
   for (let i = 1; i <= _num; i++) {
-    prisoners[i] = i;
-    boxes[i] = i;
+    prisoners[i - 1] = i;
+    boxes[i - 1] = i;
   };
 
   boxes = randSlice(boxes);
@@ -27,7 +27,8 @@ function run() {
     for (let j = 0; j < _limit; j++) {
       let open_box = boxes[target - 1]
       round++;
-      if (open_box == target) {
+      // console.log("target: " + target + ", box: " + open_box)
+      if (open_box == prisoners[i]) {
         found = true;
         break;
       } else {

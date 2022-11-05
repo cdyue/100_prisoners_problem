@@ -25,8 +25,8 @@
   * Total Result: win , Duration: 14228290 microseconds, Total Round: 3868080510, Round/Microsecond: 271.8584250110168
 
 * NodeJS: v19.0.0
-  * Total result: lose, Duration: 43758315.79998779 microseconds, Total round: 5466119455, Round/Microsecond: 124.91612977027614
-  * Total result: lose, Duration: 47502437.80004883 microseconds, Total round: 5710476152, Round/Microsecond: 120.2143809131861
-  * Total result: lose, Duration: 77827449.2000122 microseconds, Total round: 9703040593, Round/Microsecond: 124.67375832996565
-  * Total result: lose, Duration: 43978397.20001221 microseconds, Total round: 5316652208, Round/Microsecond: 120.89235957872799
-  * Total result: lose, Duration: 80611162.90002441 microseconds, Total round: 9945050977, Round/Microsecond: 123.37064271525337
+  * Total result: lose, Duration: 15214571.200012207 microseconds, Total round: 3601572857, Round/Microsecond: 236.7186567175229
+  * Total result: lose, Duration: 16291326.700012207 microseconds, Total round: 3851308718, Round/Microsecond: 236.40239919791887
+  * Total result: lose, Duration: 15408866.400024414 microseconds, Total round: 3654349722, Round/Microsecond: 237.15889456957132
+  * Total result: lose, Duration: 21403184.299987793 microseconds, Total round: 4944853558, Round/Microsecond: 231.03354569547955
+  * Total result: win, Duration: 15278263.800048828 microseconds, Total round: 3632576274, Round/Microsecond: 237.76106510141489
