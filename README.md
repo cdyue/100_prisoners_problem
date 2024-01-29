@@ -73,6 +73,7 @@
   * Total Result: lose , Duration: 17801433 microseconds, Total Round: 3559816722, Round/Microsecond: 199.97360448453784
 
 * Python: 3.11.6
+  * Total result: win, Duration: 222219786 microseconds, Total round: 3379419054, Round/Microsecond: 15.207552463397656
 
 #### Windows 11
 
