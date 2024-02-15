@@ -7,8 +7,11 @@ fn main() {
 
     let _limit = _NUM / 2;
 
-    let mut prisoners = Box::new([0; _NUM]);
-    let mut boxes = Box::new([0; _NUM]);
+    // let mut prisoners = Box::new([0; _NUM]);
+    // let mut boxes = Box::new([0; _NUM]);
+
+    let mut prisoners:[usize;_NUM]= [0;_NUM];
+    let mut boxes:[usize;_NUM]= [0;_NUM];
     // let mut prisoners = Box::new([0; _NUM]);
     // let mut boxes = Box::new([0; _NUM]);
 
