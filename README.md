@@ -19,11 +19,16 @@
   * Total result: lose, Duration: 504 microseconds, Total round: 458765.000000, Round/Microsecond: 910.248016
   * Total result: lose, Duration: 491 microseconds, Total round: 441439.000000, Round/Microsecond: 899.061100
 * Rust: 1.75.0
-  * Total Result: lose , Duration: 2273 microseconds, Total Round: 398688, Round/Microsecond: 175.40167179938408
-  * Total Result: lose , Duration: 2419 microseconds, Total Round: 424488, Round/Microsecond: 175.48077718065315
-  * Total Result: lose , Duration: 2774 microseconds, Total Round: 490124, Round/Microsecond: 176.68493150684932
-  * Total Result: win , Duration: 2211 microseconds, Total Round: 465776, Round/Microsecond: 210.66304839439167
-  * Total Result: lose , Duration: 2437 microseconds, Total Round: 472908, Round/Microsecond: 194.05334427574888
+  * Total Result: win , Duration: 1502 microseconds, Total Round: 302824, Round/Microsecond: 201.6138482023968
+  * Total Result: win , Duration: 1850 microseconds, Total Round: 379724, Round/Microsecond: 205.25621621621622
+  * Total Result: lose , Duration: 2269 microseconds, Total Round: 445434, Round/Microsecond: 196.31291317761128
+  * Total Result: lose , Duration: 2551 microseconds, Total Round: 485744, Round/Microsecond: 190.41317130537044
+  * Total Result: win , Duration: 1495 microseconds, Total Round: 268732, Round/Microsecond: 179.75384615384615
+  * ~~Total Result: lose , Duration: 2273 microseconds, Total Round: 398688, Round/Microsecond: 175.40167179938408~~
+  * ~~Total Result: lose , Duration: 2419 microseconds, Total Round: 424488, Round/Microsecond: 175.48077718065315~~
+  * ~~Total Result: lose , Duration: 2774 microseconds, Total Round: 490124, Round/Microsecond: 176.68493150684932~~
+  * ~~Total Result: win , Duration: 2211 microseconds, Total Round: 465776, Round/Microsecond: 210.66304839439167~~
+  * ~~Total Result: lose , Duration: 2437 microseconds, Total Round: 472908, Round/Microsecond: 194.05334427574888~~
 * Python: 3.11.6
   * Total result: lose, Duration: 15549 microseconds, Total round: 375505, Round/Microsecond: 24.149784552061227
   * Total result: lose, Duration: 15549 microseconds, Total round: 375505, Round/Microsecond: 24.149784552061227
@@ -42,11 +47,16 @@
   * Total result: lose, Duration: 93173 microseconds, Total round: 48739377.000000, Round/Microsecond: 523.106232
   * Total result: lose, Duration: 84087 microseconds, Total round: 43656833.000000, Round/Microsecond: 519.186474
 * Rust: 1.75.0
-  * Total Result: lose , Duration: 172918 microseconds, Total Round: 38553898, Round/Microsecond: 222.9605824726171
-  * Total Result: lose , Duration: 171643 microseconds, Total Round: 36941480, Round/Microsecond: 215.22275886578538
-  * Total Result: lose , Duration: 201418 microseconds, Total Round: 42906272, Round/Microsecond: 213.02104082058207
-  * Total Result: win , Duration: 133459 microseconds, Total Round: 29564196, Round/Microsecond: 221.5226848695105
-  * Total Result: lose , Duration: 193334 microseconds, Total Round: 41429642, Round/Microsecond: 214.2905127913352
+  * Total Result: lose , Duration: 191051 microseconds, Total Round: 44818296, Round/Microsecond: 234.58812568371795
+  * Total Result: lose , Duration: 161186 microseconds, Total Round: 37941196, Round/Microsecond: 235.38766394103706
+  * Total Result: lose , Duration: 157493 microseconds, Total Round: 36536182, Round/Microsecond: 231.98606922212417
+  * Total Result: lose , Duration: 187434 microseconds, Total Round: 43547524, Round/Microsecond: 232.33524333898865
+  * Total Result: win , Duration: 116103 microseconds, Total Round: 26825242, Round/Microsecond: 231.04693246513872
+  * ~~Total Result: lose , Duration: 172918 microseconds, Total Round: 38553898, Round/Microsecond: 222.9605824726171~~
+  * ~~Total Result: lose , Duration: 171643 microseconds, Total Round: 36941480, Round/Microsecond: 215.22275886578538~~
+  * ~~Total Result: lose , Duration: 201418 microseconds, Total Round: 42906272, Round/Microsecond: 213.02104082058207~~
+  * ~~Total Result: win , Duration: 133459 microseconds, Total Round: 29564196, Round/Microsecond: 221.5226848695105~~
+  * ~~Total Result: lose , Duration: 193334 microseconds, Total Round: 41429642, Round/Microsecond: 214.2905127913352~~
 * Python: 3.11.6
   * Total result: win, Duration: 977215 microseconds, Total round: 23643692, Round/Microsecond: 24.194974493842196
   * Total result: win, Duration: 977215 microseconds, Total round: 23643692, Round/Microsecond: 24.194974493842196
@@ -66,11 +76,16 @@
   * Total result: win, Duration: 11572851 microseconds, Total round: 2906640662.000000, Round/Microsecond: 251.160294
 
 * Rust: 1.75.0
-  * Total Result: lose , Duration: 17715555 microseconds, Total Round: 3704455904, Round/Microsecond: 209.107527480793
-  * Total Result: lose , Duration: 21341423 microseconds, Total Round: 4265662990, Round/Microsecond: 199.8771586130878
-  * Total Result: win , Duration: 18662419 microseconds, Total Round: 3683462600, Round/Microsecond: 197.37326656313954
-  * Total Result: win , Duration: 12663032 microseconds, Total Round: 2631057088, Round/Microsecond: 207.7746536532483
-  * Total Result: lose , Duration: 17801433 microseconds, Total Round: 3559816722, Round/Microsecond: 199.97360448453784
+  * Total Result: win , Duration: 11733618 microseconds, Total Round: 2780352106, Round/Microsecond: 236.95607833832668
+  * Total Result: win , Duration: 12836609 microseconds, Total Round: 3169087242, Round/Microsecond: 246.87884798859264
+  * Total Result: lose , Duration: 15187149 microseconds, Total Round: 3579000950, Round/Microsecond: 235.6598298996079
+  * Total Result: win , Duration: 8701975 microseconds, Total Round: 2001362862, Round/Microsecond: 229.98949801625494
+  * Total Result: lose , Duration: 20227077 microseconds, Total Round: 4483207710, Round/Microsecond: 221.6438741989265
+  * ~~Total Result: lose , Duration: 17715555 microseconds, Total Round: 3704455904, Round/Microsecond: 209.107527480793~~
+  * ~~Total Result: lose , Duration: 21341423 microseconds, Total Round: 4265662990, Round/Microsecond: 199.8771586130878~~
+  * ~~Total Result: win , Duration: 18662419 microseconds, Total Round: 3683462600, Round/Microsecond: 197.37326656313954~~
+  * ~~Total Result: win , Duration: 12663032 microseconds, Total Round: 2631057088, Round/Microsecond: 207.7746536532483~~
+  * ~~Total Result: lose , Duration: 17801433 microseconds, Total Round: 3559816722, Round/Microsecond: 199.97360448453784~~
 
 * Python: 3.11.6
   * Total result: win, Duration: 222219786 microseconds, Total round: 3379419054, Round/Microsecond: 15.207552463397656
