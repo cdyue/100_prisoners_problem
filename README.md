@@ -115,3 +115,18 @@
 
 * Python: 3.11.0
   * Total result: win, Duration: 218016103 microseconds, Total round: 2565787086, Round/Microsecond: 11.768796206764598
+
+### 300000 prisoners
+
+#### Windows Subsystem for Linux
+
+* Go: v1.21.6
+  * Total result: lose, Duration: 393367366 microseconds, Total round: 40765808028.000000, Round/Microsecond: 103.632918
+  * Total result: win, Duration: 216084666 microseconds, Total round: 23111996008.000000, Round/Microsecond: 106.958057
+
+* Rust: 1.75.0
+  * Total Result: lose , Duration: 399338479 microseconds, Total Round: 43698484856, Round/Microsecond: 109.42718308896048
+  * Total Result: lose , Duration: 371799667 microseconds, Total Round: 38068251852, Round/Microsecond: 102.3891499397174
+
+* Python: 3.11.6
+  * Total result: lose, Duration: 6882587938 microseconds, Total round: 41708542076, Round/Microsecond: 6.060008597306788

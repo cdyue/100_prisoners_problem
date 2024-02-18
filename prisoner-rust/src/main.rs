@@ -1,6 +1,6 @@
 use std::time::SystemTime;
 
-const _NUM: usize = 100000;
+const _NUM: usize = 300000;
 
 fn main() {
     let start_time = SystemTime::now();

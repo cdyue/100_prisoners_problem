@@ -7,7 +7,7 @@ import (
 )
 
 const (
-	_num   = 100000   //number of prisoner, box
+	_num   = 300000   //number of prisoner, box
 	_limit = _num / 2 //round limit
 )
 

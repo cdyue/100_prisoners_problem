@@ -1,7 +1,7 @@
 import time
 import random
 
-_num = 100000
+_num = 300000
 _limit = _num / 2
 
 
