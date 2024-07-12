@@ -24,7 +24,7 @@ func main() {
 	// fmt.Println("boxes:", boxes)
 	// fmt.Println("prisoners:", prisoners)
 	var round float64 = 0
-	result := make([]bool, _num)
+	// result := make([]bool, _num)
 	for _, v := range prisoners {
 		found := false
 		target := v
@@ -38,12 +38,17 @@ func main() {
 				target = openedBox
 			}
 		}
+		if !found {
+			duration := time.Now().Sub(startTime).Microseconds()
+			fmt.Printf("Total result: lose, Duration: %d microseconds, Total round: %f, Round/Microsecond: %f", duration, round, round/float64(duration))
+			return
+		}
 		// fmt.Printf("prisoner %d : %t", v, found)
-		result[v-1] = found
+		// result[v-1] = found
 	}
 	// fmt.Println("result:", result)
 	duration := time.Now().Sub(startTime).Microseconds()
-	fmt.Printf("Total result: %s, Duration: %d microseconds, Total round: %f, Round/Microsecond: %f", checkResult(result), duration, round, round/float64(duration))
+	fmt.Printf("Total result: win, Duration: %d microseconds, Total round: %f, Round/Microsecond: %f", duration, round, round/float64(duration))
 
 }
 
@@ -63,11 +68,11 @@ func swap(i, j int, arr []int) {
 	arr[i], arr[j] = arr[j], arr[i]
 }
 
-func checkResult(result []bool) string {
-	for _, v := range result {
-		if !v {
-			return "lose"
-		}
-	}
-	return "win"
-}
+// func checkResult(result []bool) string {
+// 	for _, v := range result {
+// 		if !v {
+// 			return "lose"
+// 		}
+// 	}
+// 	return "win"
+// }

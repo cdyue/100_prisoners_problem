@@ -26,7 +26,7 @@ fn main() {
     // println!("prisoners: {:?}", prisoners);
     // println!("boxes: {:?}", boxes);
 
-    let mut result: [bool; _NUM] = [false; _NUM];
+    // let mut result: [bool; _NUM] = [false; _NUM];
     let mut round: u128 = 0;
     // for p in prisoners {
     for p in prisoners.as_slice() {
@@ -45,7 +45,18 @@ fn main() {
                 target = opened_box;
             }
         }
-        result[p - 1] = found
+        let duration = SystemTime::now()
+        .duration_since(start_time)
+        .unwrap()
+        .as_micros();
+        let avg = round as f64 / duration as f64;
+        println!(
+        "Total Result: lose , Duration: {} microseconds, Total Round: {}, Round/Microsecond: {}",
+        duration,
+        round,
+        avg,
+        );
+        // result[p - 1] = found
     }
 
     let duration = SystemTime::now()
@@ -54,8 +65,7 @@ fn main() {
         .as_micros();
     let avg = round as f64 / duration as f64;
     println!(
-        "Total Result: {} , Duration: {} microseconds, Total Round: {}, Round/Microsecond: {}",
-        check_result(result),
+        "Total Result: win , Duration: {} microseconds, Total Round: {}, Round/Microsecond: {}",
         duration,
         round,
         avg,
@@ -73,11 +83,11 @@ fn random_array(arr: &mut [usize; _NUM]) {
     }
 }
 
-fn check_result(arr: [bool; _NUM]) -> &'static str {
-    for i in arr {
-        if !i {
-            return "lose";
-        }
-    }
-    return "win";
-}
+// fn check_result(arr: [bool; _NUM]) -> &'static str {
+//     for i in arr {
+//         if !i {
+//             return "lose";
+//         }
+//     }
+//     return "win";
+// }

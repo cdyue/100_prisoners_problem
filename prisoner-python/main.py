@@ -18,7 +18,7 @@ def main():
     boxes = randSlice(boxes)
     # print(boxes)
     round = 0
-    result = []
+    # result = []
     for x in prisoners:
         found = False
         target = x
@@ -35,14 +35,18 @@ def main():
                 break
             else:
                 target = opened_box
-        result.append(found)
+        end_time = int(time.time()*1000*1000)
+        duration = end_time-start_time
+        txt = "Total result: lose, Duration: {} microseconds, Total round: {}, Round/Microsecond: {}"
+        print(duration, round, round / duration)
+        # result.append(found)
 
     end_time = int(time.time()*1000*1000)
     duration = end_time-start_time
     # print(start_time)
     # print(end_time)
-    txt = "Total result: {}, Duration: {} microseconds, Total round: {}, Round/Microsecond: {}"
-    print(txt.format(checkResult(result), duration, round, round / duration))
+    txt = "Total result: win, Duration: {} microseconds, Total round: {}, Round/Microsecond: {}"
+    print(duration, round, round / duration)
 
 
 def randSlice(arr):
@@ -57,11 +61,11 @@ def randSlice(arr):
     return arr
 
 
-def checkResult(result):
-    for x in result:
-        if (x == False):
-            return "lose"
-    return "win"
+# def checkResult(result):
+#     for x in result:
+#         if (x == False):
+#             return "lose"
+#     return "win"
 
 
 main()

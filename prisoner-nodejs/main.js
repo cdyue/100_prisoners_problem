@@ -19,7 +19,7 @@ function run() {
   // console.log("boxes:" + boxes)
 
   let round = 0;
-  let result = [];
+  // let result = [];
 
   for (let i = 0; i < _num; i++) {
     let found = false;
@@ -35,7 +35,15 @@ function run() {
         target = open_box
       }
     }
-    result[i] = found;
+    if (!found) {
+      let hr_end_time = process.hrtime();
+      let end_time = hr_end_time[0] * 1000000 + hr_end_time[1] / 1000;
+      let duration = end_time - start_time;
+
+      console.log("Total result: lose" + ", Duration: " + duration + " microseconds, Total round: " + round + ", Round/Microsecond: " + round / duration);
+      return
+    }
+    // result[i] = found;
   }
 
   let hr_end_time = process.hrtime();
@@ -45,7 +53,7 @@ function run() {
   // console.log("boxes:" + boxes)
 
   // console.log(result);
-  console.log("Total result: " + checkResult(result) + ", Duration: " + duration + " microseconds, Total round: " + round + ", Round/Microsecond: " + round / duration);
+  console.log("Total result: win" + ", Duration: " + duration + " microseconds, Total round: " + round + ", Round/Microsecond: " + round / duration);
 }
 
 function randSlice(arr) {
@@ -58,19 +66,19 @@ function randSlice(arr) {
   return arr
 }
 
-function checkResult(result) {
-  if (!result) {
-    return "lose";
-  }
-  if (result.length == 0) {
-    return "lose";
-  }
-  for (let i = 0; i < result.length; i++) {
-    if (!result[i]) {
-      return "lose";
-    }
-  }
-  return "win";
-}
+// function checkResult(result) {
+//   if (!result) {
+//     return "lose";
+//   }
+//   if (result.length == 0) {
+//     return "lose";
+//   }
+//   for (let i = 0; i < result.length; i++) {
+//     if (!result[i]) {
+//       return "lose";
+//     }
+//   }
+//   return "win";
+// }
 
 run();
